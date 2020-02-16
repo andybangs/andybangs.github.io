@@ -1,3 +1,10 @@
+:root {
+  --primary: #1137f4;
+  --primary-70: #1137f4b3;
+  --primary-80: #1137f4cc;
+  --text: #222;
+}
+
 html,
 body {
   margin: 0;
@@ -9,6 +16,7 @@ body {
     Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-size: 18px;
   line-height: 1.35rem;
+  color: var(--text);
 }
 
 h1 {
@@ -18,12 +26,12 @@ h1 {
 
 a {
   font-weight: 500;
-  color: #1137f4;
+  color: var(--primary);
   text-decoration: none;
 }
 
 a:hover {
-  color: #1137f4c7;
+  color: var(--primary-80);
 }
 
 .container {
@@ -34,7 +42,7 @@ a:hover {
 
 .portrait {
   max-width: 100%;
-  box-shadow: 0.3em 0.3em #1137f4b3;
+  box-shadow: 0.3em 0.3em var(--primary-70);
 }
 
 @media screen and (min-width: 768px) {
@@ -51,6 +59,6 @@ a:hover {
   }
 
   .portrait {
-    box-shadow: 0.5em 0.5em #1137f4c7;
+    box-shadow: 0.5em 0.5em var(--primary-80);
   }
 }
