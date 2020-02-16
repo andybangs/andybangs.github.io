@@ -1,225 +1,56 @@
-html {
-	height: 100%;
+html,
+body {
+  margin: 0;
+  height: 100%;
 }
 
 body {
-	min-height: 100%;
-	font-size: .95rem;
-	line-height: 1.6rem;
-	margin-left: 30px;
-	border-left: 1px solid black;
-	font-family: "aktiv-grotesk", 'Helvetica Neue', Helvetica, Arial, Tahoma, Geneva, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell,
+    Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-size: 18px;
+  line-height: 1.35rem;
 }
 
-h1,h2,h3,h4,h5,h6 {
-	color: #000;
-	text-transform: uppercase;
+h1 {
+  font-size: 2.5rem;
+  margin: 0 0 2rem 0;
 }
 
-.serif {
-	font-size: 1.15rem;
-	font-family: "adobe-garamond-pro", Garamond, Georgia, serif;
-	letter-spacing: .04rem;
-	font-style: italic;
+a {
+  font-weight: 500;
+  color: #0787f7;
+  text-decoration: none;
 }
 
-a:link, a:visited {
-	text-decoration: none;
-	color: #000;
-}
-
-a:hover, a:focus {
-	color: #000;
-}
-
-hr {
-	border:none;
-	border-bottom: 1px solid black;
-	margin-left:-80px;
-	margin-top: -20px;
+a:hover {
+  color: #0787f7a3;
 }
 
 .container {
-	padding-left: 50px;
-	padding-top: 2.5%;
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 2.5rem 1.25rem;
 }
 
-.container:after {
-	content: "";
-	display: block;
-}	
-
-.container:after, footer {
-	height: 50px;
+.portrait {
+  max-width: 100%;
+  box-shadow: 0.3em 0.3em #0787f770;
 }
 
-.logo {
-	width: 450px;
-	display:inline-block;
-}
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 0.85rem;
+  }
 
-footer {
-	margin-top: 2%;
-	position: relative;
-	padding-bottom: 15px;
-}
+  h1 {
+    font-size: 2.75rem;
+  }
 
-footer p {
-	padding-left: 50px;
-}
+  .conainer {
+    padding: 4rem 2rem;
+  }
 
-.mobile-intro {
-	display: none;
-}
-
-.intro, .mobile-intro {
-	font-size: 1.3rem !important;
-	margin: 4% 0;
-	text-transform: inherit;
-	font-weight: lighter;
-}
-
-.top-hr {
-	margin-top: -25px;
-}
-
-.bottom-hr {
-	width:30%;
-}
-
-.social {
-	font-size: 1.15rem;
-	margin-top: 50px;
-}
-
-.social a {
-	transition: all .2s;
-	-webkit-transition: all .2s;
-	border: 1px solid #000;
-	margin-right: 5px;
-	background-color: whitesmoke;
-	width: 35px;
-	height: 25px;
-	display: inline-block;
-	text-align: center;
-	line-height: 25px;
-}
-
-.fa {
-	padding: 2px;
-}
-
-.button {
-	padding: 1px 20px; 
-	border: 1px solid #000; 
-	display: inline-block; 
-	background-color:whitesmoke;
-	text-transform: lowercase;
-	font-size: .85rem;
-	letter-spacing: 2px;
-	transition: all .2s;
-	-webkit-transition: all .2s;
-	margin: 10px 10px 20px 0;
-}
-
-.button:hover, .button:focus, .social a:hover {
-	background-color: #000;
-	color: whitesmoke;
-}
-
-.section-title {
-	text-transform: lowercase;
-	font-size: 1.2rem;
-	display: inline-block;
-}
-
-.plus-container {
-	position: relative;
-	width: 9px;
-	height: 9px;
-	margin-right: 10px;
-	display: inline-block;
-	top: 1px;
-}
-
-.plus-l, .plus-r {
-	content: '';
-	position: absolute;
-	border: 2px solid #000;
-	width: 9px;
-}
-
-.plus-r {
-	transform: rotate(90deg);
-	-webkit-transform: rotate(90deg);
-}
-
-.project-container {
-	box-sizing: border-box;
-	padding-right: 2rem;
-}
-
-.project-title {
-	font-weight: normal;
-	margin: 20px 0 -10px;
-}
-
-.project-title span {
-	text-transform: capitalize;
-}
-
-.project-desc {
-	padding-right: 50px;
-	text-align: justify;
-}
-
-.technologies {
-	border-left: 1px solid #000;
-	box-sizing: border-box;
-	padding: 25px 50px;
-	height: 100%;
-	margin-top: 80px;
-}
-
-@media screen and (max-width:1023px) {
-	.intro, .top-hr {
-		display: none;
-	}
-
-	.bottom-hr {
-		width:100%;
-		margin-left: 0;
-	}
-
-	.social {
-		margin: 25px 0;
-	}
-
-	.mobile-intro {
-		display: block;
-		margin: 2% 0 0;
-	}
-
-	.technologies {
-		padding: 0;
-		border: 0;
-		margin-top: 0;
-	}
-}	
-
-@media screen and (max-width:590px) {
-	.logo {
-		max-width: 80%;
-	}
-	.project-desc {
-		text-align: left;
-	}
-	body {
-		margin-left: 0;
-		border: 0;
-	}
- .container {
-			padding: 40px;
-			padding-top: 40px!important
+  .portrait {
+    box-shadow: 0.5em 0.5em #0787f770;
   }
 }
