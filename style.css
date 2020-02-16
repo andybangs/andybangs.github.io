@@ -18,12 +18,12 @@ h1 {
 
 a {
   font-weight: 500;
-  color: #0787f7;
+  color: #1137f4;
   text-decoration: none;
 }
 
 a:hover {
-  color: #0787f7a3;
+  color: #1137f4c7;
 }
 
 .container {
@@ -34,7 +34,7 @@ a:hover {
 
 .portrait {
   max-width: 100%;
-  box-shadow: 0.3em 0.3em #0787f770;
+  box-shadow: 0.3em 0.3em #1137f4b3;
 }
 
 @media screen and (min-width: 768px) {
@@ -51,6 +51,6 @@ a:hover {
   }
 
   .portrait {
-    box-shadow: 0.5em 0.5em #0787f770;
+    box-shadow: 0.5em 0.5em #1137f4c7;
   }
 }
